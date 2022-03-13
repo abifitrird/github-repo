@@ -44,3 +44,21 @@ a:hover {
   text-decoration: underline;
   color: orangered;
 }
+
+p {
+  font-size: 11pt;
+}
+
+i {
+  color: white;
+  background-color: gray;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+
+.description {
+  color: gray;
+  font-style: italic;
+  font-size: 12pt;
+}
