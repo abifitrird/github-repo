@@ -1,24 +1,26 @@
 import React from 'react';
 
-const Owner = () => {
+const Owner = ({ avatarUrl, htmlUrl, username, total }) => {
   return (
-    <div className='profile min-h-screen bg-green-300 text-lg font-semibold'>
+    <div className='profile min-h-screen bg-green-300 text-lg text-green-900 font-semibold'>
       <div className='grid justify-items-center p-4 gap-3'>
-        <h1>Owner</h1>
+        <h1>Github User</h1>
         <img
-          src='https://avatars.githubusercontent.com/u/28497629?v=4'
-          alt=''
+          src={avatarUrl}
+          alt={username}
           width='200'
           height='200'
           className='rounded-full justify-self-center shadow-md'
         />
-        <a
-          href='https://github.com/abifitrird'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          abifitrird
-        </a>
+        <p>
+          Username:{' '}
+          <a href={htmlUrl} target='_blank' rel='noopener noreferrer'>
+            {username}
+          </a>
+        </p>
+        <p>
+          Total repositories: <u>{total}</u>
+        </p>
       </div>
     </div>
   );
