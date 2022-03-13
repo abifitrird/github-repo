@@ -15,3 +15,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.profile {
+  width: 240px;
+  min-width: 120px;
+  max-width: 360px;
+}
