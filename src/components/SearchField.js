@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const SearchField = ({ getData }) => {
   const [username, setUsername] = useState('');
-  console.log({ username });
+
   return (
     <div className='w-full px-3 font-semibold flex flex-row items-center text-green-900'>
       <label className='w-48' htmlFor='username'>
