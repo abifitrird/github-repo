@@ -16,7 +16,7 @@ const SearchField = ({ getData }) => {
 
   return (
     <div className='w-full px-3 font-semibold flex flex-row items-center text-green-900'>
-      <label className='w-48' htmlFor='username'>
+      <label className='w-48 text-center' htmlFor='username'>
         Github username
       </label>
       <input
@@ -28,7 +28,7 @@ const SearchField = ({ getData }) => {
       />
       <button
         id='submit'
-        className='w-48 p-3 bg-green-300 rounded-md shadow-md font-semibold hover:text-white hover:bg-green-600 focus:outline-none'
+        className='w-48 p-3 bg-green-300 rounded-md shadow-md font-semibold hover:text-white hover:bg-green-600 focus:outline-none active:translate-y-0.5'
         type='type'
         onClick={() => getData(username)}
       >

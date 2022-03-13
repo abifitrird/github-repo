@@ -42,7 +42,7 @@ const RepoCard = ({
           <p className='col-span-4 flex flex-row flex-wrap space-x-2'>
             :{' '}
             {topics.map((item) => (
-              <i>{item}</i>
+              <i key={item}>{item}</i>
             ))}
           </p>
         )}
